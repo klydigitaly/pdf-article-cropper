@@ -24,9 +24,9 @@
 4. צרו API Key. הגבילו אותו ל־Websites עם `https://klydigitaly.github.io/*` וגם `https://docs.google.com/*`; הגבילו את ה־APIs ל־Google Picker API ול־Google Drive API.
 5. מצאו את **Project Number** תחת Project info ב־Google Cloud.
 6. מלאו את `apiKey`, `clientId`, ו־`appId` (Project Number) בקובץ `google-drive-config.js`. אין להוסיף Client Secret לקוד.
-7. פרסמו את `google-drive-config.js` ואת יתר הקבצים ב־GitHub Pages. לחצו על "שמירה ב־Google Drive", התחברו ובחרו את תיקיית היעד בפעם הראשונה. הבחירה נשמרת בדפדפן.
+7. פרסמו את `google-drive-config.js` ואת יתר הקבצים ב־GitHub Pages. לחצו על "הורדת PNG"; בפעם הראשונה התחברו ל־Google ובחרו תיקיית יעד. לאחר מכן כל לחיצה תוריד את התמונה למכשיר ותעלה אותה אוטומטית ל־Drive.
 
-ה־PDF מעובד מקומית. רק תמונת ה־PNG נשלחת ל־Drive אחרי בחירת המשתמשת. העלאה ל־Drive אינה נתמכת בפתיחת הקובץ ישירות מהמחשב (`file://`); יש להשתמש ב־GitHub Pages או בשרת מקומי דרך `localhost`.
+ה־PDF מעובד מקומית. בלחיצה על "הורדת PNG", תמונת ה־PNG נשמרת במכשיר ומועלת ל־Drive. אם העלאת Drive נכשלת, ההורדה למכשיר עדיין תושלם והאפליקציה תציג הודעה. העלאה ל־Drive אינה נתמכת בפתיחת הקובץ ישירות מהמחשב (`file://`); יש להשתמש ב־GitHub Pages או בשרת מקומי דרך `localhost`.
 
 ## מגבלות
 זיהוי העמוד מבוסס על שכבת הטקסט של PDF. החיתוך הראשוני מכוון לעיצוב הגיליון שסופק. במקרה של שינוי פריסה או PDF סרוק, יש לבחור את העמוד ולכוון את המסגרת ידנית.
